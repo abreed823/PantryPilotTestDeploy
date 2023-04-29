@@ -24,7 +24,7 @@ export default function Navbar({ toggleMode }: NavbarProps) {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const handleMenu = (event: ChangeEvent<HTMLElement>) => {
+  const handleMenu = (event: any) => {
     setAnchorEl(event?.currentTarget);
   };
   const handleSignout = async () => {
